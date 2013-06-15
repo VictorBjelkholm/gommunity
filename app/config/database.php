@@ -1,4 +1,17 @@
 <?php
+
+if(isset($_SERVER['DB1_HOST'])) {
+	$host     = $_SERVER['DB1_HOST'];
+	$database = $_SERVER['DB1_NAME'];
+	$username = $_SERVER['DB1_USER'];
+	$password = $_SERVER['DB1_PASS'];
+} else {
+	$host     = 'localhost';
+	$database = 'gommunity';
+	$username = 'root';
+	$password = '';
+}
+
 return array(
 
 	/*
@@ -46,10 +59,10 @@ return array(
 	'connections' => array(
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'gommunity',
-			'username'  => 'root',
-			'password'  => '',
+		    'host'     => $host,
+		    'database' => $database,
+		    'username' => $username,
+		    'password' => $password,
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
