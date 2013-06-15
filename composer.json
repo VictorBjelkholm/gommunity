@@ -1,6 +1,6 @@
 {
 	"require": {
-		"laravel/framework": "4.0.*",
-		"codeception/codeception": "@stable"
+		"laravel/framework": "dev-master",
+		"codeception/codeception": "dev-master"
 	}
 }
