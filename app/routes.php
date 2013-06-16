@@ -14,7 +14,8 @@
 Route::get('/', function()
 {
     $messages = Message::all();
-    return View::make('hello')->with('messages', $messages);
+    $error = Session::get('error');
+    return View::make('hello')->with('messages', $messages)->with('error', $error);
 });
 
 Route::post('messages', function(){
@@ -28,6 +29,5 @@ Route::post('messages', function(){
         $error = 'Successfully posted your message!';
     }
 
-    $messages = Message::all();
-	return View::make('hello')->with('error', $error)->with('messages', $messages);
+    return Redirect::to('/')->with('error', $error);
 });
