@@ -15,6 +15,6 @@ modules:
         - WebHelper
     config:
         Selenium2:
-            url: 'http://gommunity.pagodabox.dev'
+            url: 'http://localhost:4443'
             browser: 'phantomjs'
             port: '4444'

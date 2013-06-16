@@ -1,10 +1,11 @@
 <?php
 $I = new WebGuy($scenario);
+
 $I->wantTo('write a too short message');
 
 $I->amOnPage('/');
 
-$I->see('You have arrived.');
+$I->see('You have arrived');
 
 $I->fillField('message', 'Short');
 

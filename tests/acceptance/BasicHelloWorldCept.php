@@ -4,7 +4,7 @@ $I->wantTo('write a basic message');
 
 $I->amOnPage('/');
 
-$I->see('You have arrived.');
+$I->see('You have arrived');
 
 $I->fillField('message', 'This is my message!');
 

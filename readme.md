@@ -11,4 +11,4 @@ Deployment is highly unstable to Pagodabox though.
 -
 -   [Composer\Downloader\TransportException]
 -   The 'https://api.github.com/repos/sebastianbergmann/php-timer/zipball/1.0.4' URL could not be accessed: HTTP/1.1 403 Forbidden
-```
+``
