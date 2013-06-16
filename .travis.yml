@@ -7,3 +7,5 @@ before_script:
   - LARAVEL_ENV=development php -S localhost:4443 -t ./public/ &
   - phantomjs --webdriver=4444 &
   - mysql -u root -e 'create database IF NOT EXISTS gommunity;'
+
+script: codecept run
