@@ -1,5 +1,7 @@
 ##Test project
 
+[![Build Status](https://travis-ci.org/VictorBjelkholm/gommunity.png)](https://travis-ci.org/VictorBjelkholm/gommunity)
+
 Test project for deploying stuff and testing on Travis CI and CircleCI
 
 Deployment is highly unstable to Pagodabox though.
