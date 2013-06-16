@@ -13,6 +13,8 @@ return array(
 	|
 	*/
 
+	'version' => 'v0.1',
+
 	'debug' => true,
 
 	/*
